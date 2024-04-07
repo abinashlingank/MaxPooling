@@ -10,8 +10,7 @@ This repository contains Python implementations for solving the max pooling prob
 4. [Usage](#usage)
 5. [Naive Approach](#naive-approach)
 6. [Optimized Approach](#optimized-approach)
-7. [Contributing](#contributing)
-8. [License](#license)
+
 
 ## Introduction
 
@@ -241,10 +240,3 @@ test_max_pooling_optimized()
   - Time Complexity: O(m * n * k^2) in the worst case, where m and n are the number of rows and columns respectively, and k is the window size.
   - Space Complexity: O(m * n) since the function uses additional space to store intermediate window results.
 
-## Contributing
-
-Contributions are welcome! Feel free to submit pull requests to contribute improvements, new features, or bug fixes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
