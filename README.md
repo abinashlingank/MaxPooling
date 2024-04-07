@@ -34,22 +34,70 @@ To verify the performance improvement of the optimized version over the original
 To use the provided implementations:
 
 1. Clone the Repository: Clone this repository to your local machine using the following command:
-    bash
+    ```bash
     git clone https://github.com/abinashlingank/MaxPooling.git
+    ```
     
 
 2. Navigate to the Directory: Change your directory to the cloned repository:
-    bash
+    - For Naive Approach
+    ```bash
     cd MaxPoolingNaive.py
-    
+    ```
+    - For Optimized Approach
+    ```bash
+    cd MaxPoolingOptimized.py
+    ``` 
 
 3. Run the Test Script: Run the provided test script to see the results for a sample input:
-    bash
-    python MaxPoolingOptimized
-    
+    - For Naive Approach
+    ```bash
+    python MaxPoolingNaive.py
+    ```
+    - For Optimized Approach
+    ```bash
+    python MaxPoolingOptimized.py
+    ``` 
+
 
 4. Customize Inputs: You can customize the input matrix and window size in the test_max_pooling.py script to test with different inputs.
 
+5. Sample Input:
+```   
+Enter no of rows:
+3
+Enter values for row 1 separated by spaces: 1 3 2 4
+Enter values for row 2 separated by spaces: 5 2 7 8
+Enter values for row 3 separated by spaces: 4 1 9 3
+Matrix entered by the user:
+[[1 3 2 4]
+ [5 2 7 8]
+ [4 1 9 3]]
+Enter window size:
+2
+```
+
+To copy the sample input use the below one:
+```
+3
+1 3 2 4
+5 2 7 8
+4 1 9 3
+2
+```
+
+
+7. Sample Output:
+```
+Original matrix:
+[[1 3 2 4]
+ [5 2 7 8]
+ [4 1 9 3]]
+
+Result using max_pooling:
+[[5 7 8]
+ [5 9 9]]
+```
 
 ## Naive Approach
 
