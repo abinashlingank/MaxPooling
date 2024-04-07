@@ -18,11 +18,11 @@ Max pooling is a technique used in convolutional neural networks (CNNs) to downs
 
 ## Implementation
 
-We provide two Python functions for solving the max pooling problem:
+We provide two Python files for solving the max pooling problem:
 
-1. max_pooling(matrix, window_size): This function calculates the maximum value in each moving window position by directly looping through each position and extracting the window. It has a time complexity of O(m^2 * k^2) in the worst case.
+1. MaxPoolingNaive: max_pooling(matrix, window_size) - This function calculates the maximum value in each moving window position by directly looping through each position and extracting the window. It has a time complexity of O(m^2 * k^2) in the worst case.
 
-2. max_pooling_optimized(matrix, window_size): This function optimizes the process by pre-calculating the windows along the first row and column and then updating them as it moves along the matrix. It has a time complexity of O(m * n * k^2) in the worst case, which is more efficient than the first implementation.
+2. MaxPoolingOptimized: max_pooling_optimized(matrix, window_size) - This function optimizes the process by pre-calculating the windows along the first row and column and then updating them as it moves along the matrix. It has a time complexity of O(m * n * k^2) in the worst case, which is more efficient than the first implementation.
 
 ## Performance Comparison
 
@@ -39,13 +39,8 @@ To use the provided implementations:
     
 
 2. Navigate to the Directory: Change your directory to the cloned repository:
-    - For Naive Approach
     ```bash
-    cd MaxPoolingNaive.py
-    ```
-    - For Optimized Approach
-    ```bash
-    cd MaxPoolingOptimized.py
+    cd MaxPooling
     ``` 
 
 3. Run the Test Script: Run the provided test script to see the results for a sample input:
